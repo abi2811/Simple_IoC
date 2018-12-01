@@ -1,0 +1,11 @@
+/Users/adrian.staszewski/Programowanie/dotnet/IoC_Training/bin/Debug/netcoreapp2.1/IoC_Training.deps.json
+/Users/adrian.staszewski/Programowanie/dotnet/IoC_Training/bin/Debug/netcoreapp2.1/IoC_Training.runtimeconfig.json
+/Users/adrian.staszewski/Programowanie/dotnet/IoC_Training/bin/Debug/netcoreapp2.1/IoC_Training.runtimeconfig.dev.json
+/Users/adrian.staszewski/Programowanie/dotnet/IoC_Training/bin/Debug/netcoreapp2.1/IoC_Training.dll
+/Users/adrian.staszewski/Programowanie/dotnet/IoC_Training/bin/Debug/netcoreapp2.1/IoC_Training.pdb
+/Users/adrian.staszewski/Programowanie/dotnet/IoC_Training/obj/Debug/netcoreapp2.1/IoC_Training.csprojAssemblyReference.cache
+/Users/adrian.staszewski/Programowanie/dotnet/IoC_Training/obj/Debug/netcoreapp2.1/IoC_Training.csproj.CoreCompileInputs.cache
+/Users/adrian.staszewski/Programowanie/dotnet/IoC_Training/obj/Debug/netcoreapp2.1/IoC_Training.AssemblyInfoInputs.cache
+/Users/adrian.staszewski/Programowanie/dotnet/IoC_Training/obj/Debug/netcoreapp2.1/IoC_Training.AssemblyInfo.cs
+/Users/adrian.staszewski/Programowanie/dotnet/IoC_Training/obj/Debug/netcoreapp2.1/IoC_Training.dll
+/Users/adrian.staszewski/Programowanie/dotnet/IoC_Training/obj/Debug/netcoreapp2.1/IoC_Training.pdb
