@@ -1,7 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.NetworkInformation;
+using System.Threading;
+using System.Threading.Tasks;
 using Autofac;
+using Autofac.Features.Variance;
+using MediatR;
+using MediatR.Pipeline;
 
 namespace IoC_Training
 {
@@ -30,12 +37,8 @@ namespace IoC_Training
 
     class InMemoryUserRepository : IUserRepository
     {
-        private List<User> usersList;
+        private List<User> usersList = UserRepositoryFactory.CreateUserDB();
 
-        public InMemoryUserRepository()
-        {
-            usersList = UserRepositoryFactory.CreateUserDB();
-        }
         public void Add(User user)
             => usersList.Add(user);
         
@@ -97,6 +100,7 @@ namespace IoC_Training
         {
             var container = CreateContainerIoC();
             var UserService = container.Resolve<IUserService>();
+            
             UserService.Add("user1@email.com", "user1", "secret");
             UserService.Add("user2@email.com", "user2", "secret");
 
@@ -111,6 +115,7 @@ namespace IoC_Training
             }
 
             Console.WriteLine("Container is fine!");
+
         }
 
         public static IContainer CreateContainerIoC()
@@ -118,7 +123,6 @@ namespace IoC_Training
             var builder = new ContainerBuilder();
             builder.RegisterType<UserService>().As<IUserService>();
             builder.RegisterType<InMemoryUserRepository>().As<IUserRepository>();
-            
             return builder.Build();
         }
     }
@@ -128,5 +132,7 @@ namespace IoC_Training
         {
             IoC.Run();
         }
+
+      
     }
 }

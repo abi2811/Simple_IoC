@@ -15,6 +15,15 @@
           "lib/netstandard1.1/Autofac.dll": {}
         }
       },
+      "MediatR/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MediatR.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -258,6 +267,19 @@
         "lib/net45/Autofac.xml",
         "lib/netstandard1.1/Autofac.dll",
         "lib/netstandard1.1/Autofac.xml"
+      ]
+    },
+    "MediatR/5.1.0": {
+      "sha512": "jeDegLfMe62NHC1oAz8FlWTQva4pOUAx/rk35TfpUUbr8MkqpJZYljh1ZrnKavhPPgUUHxUSay/6KEPYd4H57g==",
+      "type": "package",
+      "path": "mediatr/5.1.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/MediatR.dll",
+        "lib/netstandard1.3/MediatR.dll",
+        "lib/netstandard2.0/MediatR.dll",
+        "mediatr.5.1.0.nupkg.sha512",
+        "mediatr.nuspec"
       ]
     },
     "Microsoft.NETCore.App/2.1.0": {
@@ -873,6 +895,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "MediatR >= 5.1.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "autofac >= 4.8.1"
     ]
@@ -884,11 +907,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/adrian.staszewski/Programowanie/dotnet/IoC_Training/IoC_Training.csproj",
+      "projectUniqueName": "/Users/adrian.staszewski/Programowanie/dotnet/IoC_Console/IoC_Training.csproj",
       "projectName": "IoC_Training",
-      "projectPath": "/Users/adrian.staszewski/Programowanie/dotnet/IoC_Training/IoC_Training.csproj",
+      "projectPath": "/Users/adrian.staszewski/Programowanie/dotnet/IoC_Console/IoC_Training.csproj",
       "packagesPath": "/Users/adrian.staszewski/.nuget/packages/",
-      "outputPath": "/Users/adrian.staszewski/Programowanie/dotnet/IoC_Training/obj/",
+      "outputPath": "/Users/adrian.staszewski/Programowanie/dotnet/IoC_Console/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -916,6 +939,10 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "MediatR": {
+            "target": "Package",
+            "version": "[5.1.0, )"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "[2.1.0, )",

@@ -1,13 +1,14 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "293e0012ce305009147b9cfab202307140471973"
+    "signature": "dbe847f993269d069106508d9b23e5bd902d0288"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "IoC_Training/1.0.0": {
         "dependencies": {
+          "MediatR": "5.1.0",
           "Autofac": "4.8.1"
         },
         "runtime": {
@@ -22,6 +23,14 @@
           "lib/netstandard1.1/Autofac.dll": {
             "assemblyVersion": "4.8.1.0",
             "fileVersion": "4.8.1.0"
+          }
+        }
+      },
+      "MediatR/5.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/MediatR.dll": {
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.0.0"
           }
         }
       },
@@ -45,6 +54,13 @@
       "sha512": "sha512-GYRLxd2wCzhvee2u1vs3AbUbF4CHDWfD7BCNjD3Vxb4wxQz3HC8bPm9Sj9uOT0gE8a6PC2fx1zufmhLgxK+cZg==",
       "path": "autofac/4.8.1",
       "hashPath": "autofac.4.8.1.nupkg.sha512"
+    },
+    "MediatR/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jeDegLfMe62NHC1oAz8FlWTQva4pOUAx/rk35TfpUUbr8MkqpJZYljh1ZrnKavhPPgUUHxUSay/6KEPYd4H57g==",
+      "path": "mediatr/5.1.0",
+      "hashPath": "mediatr.5.1.0.nupkg.sha512"
     },
     "System.ComponentModel/4.0.1": {
       "type": "package",
